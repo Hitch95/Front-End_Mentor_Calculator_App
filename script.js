@@ -4,37 +4,33 @@ const delBtn = document.getElementById("delete");
 
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
-    result.textContent += e.target.id;
+    result.innerText += e.target.dataset.symbol
+
+    if (result.innerText.length > 1 && result.innerText[0] === "0") {
+        result.innerText = result.innerText.slice(1)
+    }
   });
 });
 
 equal.addEventListener("click", () => {
-  result.textContent = eval(result.textContent);
+  result.innerText = eval(result.innerText);
 });
 
 reset.addEventListener("click", () => {
-  result.textContent = "";
+  result.innerText = "";
 });
 
 delBtn.addEventListener("click", (e) => {
-    // Use split for convert our string (textContent) to an array //
-    let arrayResult = result.textContent.split("");
-    // Use splice method for erase 'd''e''l''e''t''e' letters and last number //
-    arrayResult.splice(-7);                         
-
-    // We put a 0 if there is none number
-    if (arrayResult.length == 0) {
-        arrayResult.push("0");
+    if (result.innerText.length === 1 && result.innerText === "0") {
+        return
     }
 
-    // Use join method for convert our array to a string for (textContent) //
-    let newResult = arrayResult.join('');
-    result.textContent = newResult;
+    result.innerText = result.innerText.slice(0, -1)
 
-    return newResult;
+    if (result.innerText <= 0) {
+        result.innerText = "0"
+    }
 });
-
-
 
 const switchTheme = document.getElementById("switch-theme");
 
@@ -43,3 +39,4 @@ switchTheme.addEventListener('click', () => {
 
 });
 */
+
