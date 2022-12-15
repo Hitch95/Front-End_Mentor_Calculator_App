@@ -23,6 +23,7 @@ main {
     margin: 0 auto;
     background-color: #3a4764;
     border-radius: 10px;
+    box-shadow: 4px 4px 2px 2px #283146;
 }
 main nav {
     color: #FFF;
@@ -254,11 +255,43 @@ footer a {
     text-decoration: none;
     
 }
-footer p:hover {
-    color: #62739a;
-    cursor: auto;
+footer p:hover a {
+    box-shadow: 0px 2.5px 0px 0px #62739a;
+}
+footer p:hover a {
     box-shadow: 0px 2.5px 0px 0px #62739a;
 }
 footer p a:hover {
-    box-shadow: 0px 2.5px 0px 0px #d13f30;
+    box-shadow: 0px 2.5px 0px 0px #62739a;
+}
+
+
+/*
+.theme-two-main {
+    background-color: #e7e6e7;
+}
+*/
+/*
+.theme-three-main {
+    background-color: #16072a;
+}
+*/
+
+
+.theme-two-button {
+    background-color: #e5e4e0;
+    border-bottom: 5px solid #a79f92;
+}
+.theme-three-button {
+    background-color: #f7db2c;
+    border-bottom: 5px solid #7f2195;
+}
+
+.DelReset-theme-two {
+    background-color: #398186;
+    border-bottom: 5px solid #1a5e67;
+}
+.DelReset-theme-three {
+    background-color: #57067c;
+    border-bottom: 5px solid #be17f5;
 }
