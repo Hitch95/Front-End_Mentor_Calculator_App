@@ -5,10 +5,6 @@ const delBtn = document.querySelector(`[data-symbol="delete"]`);
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     result.innerText += e.target.dataset.symbol;
-
-    if (result.innerText.length > 1 && result.innerText[0] === "0") {
-      result.innerText = result.innerText.slice(1);
-  }
   });
 });
 
@@ -34,10 +30,9 @@ delBtn.addEventListener("click", (e) => {
 });
 
 
-
 const switchTheme = document.getElementById("switch-theme");
 
-/*
 switchTheme.addEventListener('click', () => {
+  // Add the "moveRight" class to the element to apply the keyframe animation
+  switchTheme.classList.add('moveRight');
 });
-*/

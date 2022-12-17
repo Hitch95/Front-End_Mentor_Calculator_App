@@ -57,7 +57,7 @@ main nav ul {
 main nav ul li {
     margin: 0 7.5px;
 }
-main nav div {
+main nav div {              /* Switch Theme Container */
     background-color: #252d44;
     width: 70px;
     height: 30px;
@@ -65,8 +65,7 @@ main nav div {
     position: relative;
     transform: translate(291px, -20px);
 }
-main nav div::after {
-    content: ' ';
+main nav div > span {       /* Orange Ball */
     display: inline-block;
     background-color: #cc4131;
     width: 20px;
@@ -74,6 +73,17 @@ main nav div::after {
     border-radius: 50%;
     margin: 5px 0px 0px 5px;
     cursor: pointer;
+}
+.moveRight {
+    animation: moveRight 0.65s linear;
+}
+@keyframes moveRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(20px);
+    }
 }
 main section:nth-of-type(1) {
     background-color: #181e33;
