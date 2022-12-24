@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./theme_two.css">
   <link rel="stylesheet" href="./style.css">
+
   <script src="./script.js" defer></script>
-  <title>Frontend Mentor | Calculator app</title> 
+
+  <title>Frontend Mentor | Calculator app</title>
 </head>
+
 <body>
 
-  <main class="theme-two-main theme-three-main">
+  <main>
+
     <nav>
       <header>calc</header>
       <p>theme</p>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
       <div>
-        <span id="switch-theme"></span>
+        <input id="theme-one" type="radio" name="theme" value="1" checked>
+        <label for="theme-one">1</label>
+        <input id="theme-two" type="radio" name="theme" value="2">
+        <label for="theme-two">2</label>
+        <input id="theme-three" type="radio" name="theme" value="3">
+        <label for="theme-three">3</label>
       </div>
     </nav>
+
+    <!-- Display Result Here -->
     <section>
       <h2 id="result"></h2>
     </section>
+
+    <!-- All Button here -->
     <section>
-      <button class="button theme-two-button theme-three-button" data-symbol="7">7</button>
-      <button class="button theme-two-button theme-three-button" id="8" data-symbol="8">8</button>
-      <button class="button theme-two-button theme-three-button" id="9" data-symbol="9">9</button>
-      <button class="button DelReset-theme-two DelReset-theme-three" data-symbol="delete">del</button>
+      <button class="button" data-symbol="7">7</button>
+      <button class="button" id="8" data-symbol="8">8</button>
+      <button class="button" id="9" data-symbol="9">9</button>
+      <button class="button" data-symbol="delete">del</button>
 
-      <button class="button theme-two-button theme-three-button" id="4" data-symbol="4">4</button>
-      <button class="button theme-two-button theme-three-button" id="5" data-symbol="5">5</button>
-      <button class="button theme-two-button theme-three-button" id="6" data-symbol="6">6</button>
-      <button class="button theme-two-button theme-three-button" id="+" data-symbol="+">+</button>
+      <button class="button" id="4" data-symbol="4">4</button>
+      <button class="button" id="5" data-symbol="5">5</button>
+      <button class="button" id="6" data-symbol="6">6</button>
+      <button class="button" id="+" data-symbol="+">+</button>
 
-      <button class="button theme-two-button theme-three-button" id="1" data-symbol="1">1</button>
-      <button class="button theme-two-button theme-three-button" id="2" data-symbol="2">2</button>
-      <button class="button theme-two-button theme-three-button" id="3" data-symbol="3">3</button>
-      <button class="button theme-two-button theme-three-button" id="-" data-symbol="-">-</button>
+      <button class="button" id="1" data-symbol="1">1</button>
+      <button class="button" id="2" data-symbol="2">2</button>
+      <button class="button" id="3" data-symbol="3">3</button>
+      <button class="button" id="-" data-symbol="-">-</button>
 
-      <button class="button theme-two-button theme-three-button" id="." data-symbol=".">.</button>
-      <button class="button theme-two-button theme-three-button" id="0" data-symbol="0">0</button>
-      <button class="button theme-two-button theme-three-button" id="/" data-symbol="/">/</button>
-      <button class="button theme-two-button theme-three-button" id="*" data-symbol="*">x</button>
+      <button class="button" id="." data-symbol=".">.</button>
+      <button class="button" id="0" data-symbol="0">0</button>
+      <button class="button" id="/" data-symbol="/">/</button>
+      <button class="button" id="*" data-symbol="*">x</button>
 
-      <button id="reset" class="DelReset-theme-two DelReset-theme-three">reset</button>
+      <button id="reset">reset</button>
       <button id="equal" data-symbol="=">=</button>
     </section>
+    
   </main>
 
   <footer>
     <p>
-      Challenge by <a href="https://www.frontendmentor.io/profile/Hitch95" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.linkedin.com/in/bahloul-moufidi-279712216/?original_referer=" target="_blank">Hitch95</a>.
+      Challenge by <a href="https://www.frontendmentor.io/profile/Hitch95" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/bahloul-moufidi-279712216/?original_referer="
+        target="_blank">Hitch95</a>.
     </p>
   </footer>
+
 </body>
+
 </html>
